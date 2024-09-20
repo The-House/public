@@ -1,30 +1,48 @@
 version: "3.1"
 
 stories:
+  - story: greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: user is happy
+    steps:
+      - intent: mood_great
+      - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: user is unhappy
+    steps:
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: user asks about PPE for a specific voltage
+    steps:
+      - intent: ask_ppe
+      - action: utter_ask_ppe
+
+  - story: user asks about voltage safety
+    steps:
+      - intent: ask_voltage
+      - action: utter_ask_voltage
+
+  - story: user asks about hazards
+    steps:
+      - intent: ask_hazard
+      - action: utter_ask_hazard
+
+  - story: user confirms something
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - story: user denies something
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - story: user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

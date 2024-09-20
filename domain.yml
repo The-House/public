@@ -2,33 +2,59 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
   - mood_great
   - mood_unhappy
-  - bot_challenge
+  - affirm
+  - deny
+  - ask_ppe
+  - ask_voltage
+  - ask_hazard
+  - goodbye
+  - ask_question
+
+entities:
+  - voltage
+  - hazard
+  - equipment
+
+slots:
+  voltage:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: voltage
+  hazard:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: hazard
+  equipment:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: equipment
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
+    - text: "Hello! How can I assist you?"
   utter_happy:
-  - text: "Great, carry on!"
-
+    - text: "I'm glad to hear you're doing great!"
+  utter_cheer_up:
+    - text: "I’m here to help you!"
+  utter_did_that_help:
+    - text: "Did that answer your question?"
+  utter_ask_ppe:
+    - text: "For {voltage} systems, you need {equipment} according to NFPA 70E."
+  utter_ask_voltage:
+    - text: "{voltage} systems should be handled carefully. PPE is recommended according to NFPA 70E."
+  utter_ask_hazard:
+    - text: "Arc flash is one of the major hazards. Make sure you're wearing the correct PPE!"
   utter_goodbye:
-  - text: "Bye"
+    - text: "Goodbye! Stay safe and follow NFPA 70E guidelines."
+  utter_affirm:
+    - text: "Great, glad I could help!"
+  utter_deny:
+    - text: "Sorry to hear that. Let me know if there's anything else I can do."
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+actions:
+  - action_get_ppe
