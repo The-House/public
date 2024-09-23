@@ -32,6 +32,8 @@ entities:
   - entity_ppe
   - entity_voltage
   - entity_hazard
+  - entity_task
+  - entity_current
 
 slots:
   voltage:
@@ -62,6 +64,13 @@ responses:
     - text: "I’m here to help you!"
   utter_did_that_help:
     - text: "Did that answer your question?"
+  utter_affirm:
+    - text: "Great! I'm glad I could help."
+  utter_deny:
+    - text: "I’m sorry to hear that. How can I assist you further?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
   utter_ask_ppe:
     - text: "For working with 600V, you should wear insulated gloves, face protection, and flame-resistant clothing."
     - text: "Make sure you're wearing arc-rated gloves, protective eyewear, and flame-resistant clothing for high-voltage work."
