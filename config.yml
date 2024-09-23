@@ -29,6 +29,7 @@ policies:
     core_fallback_threshold: 0.3
     nlu_threshold: 0.4
   - name: TEDPolicy
-    max_history: 5
-    epochs: 100
-    constrain_similarities: true
+    max_history: 10
+    epochs: 200
+    constrain_similarities: true'
+    attention_size: 128

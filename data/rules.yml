@@ -1,8 +1,15 @@
-version: "3.1"
+# Define rules directly
+- rule: Handle unclear multi-part queries
+  steps:
+    - intent: nlu_fallback
+    - action: action_default_ask_affirmation
 
-rules:
+- rule: Handle ambiguous questions
+  steps:
+    - intent: core_fallback
+    - action: action_default_fallback
 
-  - rule: handle fallback
-    steps:
-      - intent: nlu_fallback
-      - action: action_default_fallback
+- rule: Handle user clarification
+  steps:
+    - intent: affirm
+    - action: action_listen

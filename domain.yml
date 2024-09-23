@@ -11,6 +11,20 @@ intents:
   - ask_hazard
   - goodbye
   - ask_question
+  - nlu_fallback
+  - core_fallback
+
+actions:
+  - action_default_fallback
+  - action_default_ask_affirmation
+  - action_listen
+  - utter_affirm
+  - utter_deny
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_ppe
+  - utter_ask_voltage
+  - utter_ask_hazard
 
 entities:
   - voltage
@@ -20,16 +34,19 @@ entities:
 slots:
   voltage:
     type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: voltage
   hazard:
     type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: hazard
   equipment:
     type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: equipment
@@ -1232,12 +1249,14 @@ responses:
     - text: "The company was founded on April 1 , 1976 , and incorporated as Apple Computer , Inc. on January 3 , 1977 ."
     - text: "Section 8 of the Housing Act of 1937 ( ) , often simply known as Section 8 , as repeatedly amended , authorizes the payment of rental housing assistance to private landlords on behalf of approximately 3.1 million low-income households ."
     - text: "It operates through several programs , the largest of which , the Housing Choice Voucher program , pays a large portion of the rents and utilities of about 2.1 million households ."
-  utter_goodbye:
-    - text: "Goodbye! Stay safe and follow NFPA 70E guidelines."
-  utter_affirm:
-    - text: "Great, glad I could help!"
-  utter_deny:
-    - text: "Sorry to hear that. Let me know if there's anything else I can do."
 
-actions:
-  - action_get_ppe
+  utter_default:
+    - text: "I'm sorry, I didn’t quite understand that. Could you clarify?"
+
+  utter_ask_affirmation:
+    - text: "Did you mean to ask about {intent_name}? Please confirm."
+
+# Improved fallback policy with context management for follow-up queries
+session_config:
+  session_expiration_time: 60  # in minutes
+  carry_over_slots_to_new_session: true

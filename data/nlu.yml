@@ -38,160 +38,191 @@ nlu:
 
   - intent: ask_hazard
     examples: |
-      - What is an arc flash hazard?
-      - How dangerous is electrical work?
-      - What are the risks of an arc flash?
-      - Can electrical work cause injury?
-      - What hazards are associated with high-voltage work?
-      - What types of hazards exist in electrical work?
-      - How can an arc flash occur?
-      - What are the common electrical hazards on a job site?
-      - What are the main dangers of working near power lines?
-      - What injuries can occur from arc flash?
-      - Is arc flash a common hazard in electrical work?
-      - How does an arc flash happen?
-      - Can you explain what an arc flash is?
-      - What causes electrical hazards?
-      - Are electrical hazards dangerous for untrained workers?
-      - What can cause an arc flash explosion?
-      - What is the danger of working with high-voltage electricity?
-      - How can electrical shock occur?
-      - What are the dangers of electrical burns?
-      - Can electrical work lead to fires?
-      - Are there fire hazards related to arc flash?
-      - What is an arc blast?
-      - What injuries can an arc blast cause?
-      - Can electrical hazards be fatal?
-      - What are the most common causes of electrical hazards?
-      - How do arc flashes affect electrical equipment?
-      - What kind of PPE protects against arc flash hazards?
-      - What are the most common arc flash injuries?
-      - How do you prevent arc flash hazards?
-      - Can electrical hazards affect the environment?
-      - How do workers avoid electrical hazards?
-      - How can electrical equipment be hazardous?
-      - Are wet conditions dangerous when working with electricity?
-      - How can arc flash injuries be treated?
-      - What voltage is most associated with arc flash hazards?
-      - How do arc flashes differ from electrical shocks?
-      - What happens if you don't follow safety procedures in electrical work?
-      - How dangerous is live electrical work?
-      - What are the potential long-term effects of electrical injuries?
-      - What training is required to understand electrical hazards?
-      - Can poorly maintained equipment cause electrical hazards?
-      - How does grounding help prevent electrical hazards?
-      - What is the likelihood of an arc flash in residential electrical work?
-      - How dangerous is electrical wiring in old buildings?
-      - What makes high-voltage systems more dangerous than low-voltage?
-      - What are the symptoms of arc flash exposure?
-      - What types of electrical systems are most prone to hazards?
-      - How can workers detect electrical hazards in the field?
-      - How do electrical currents contribute to workplace hazards?
+      - What is an [arc flash hazard](entity_hazard)?
+      - How hazardous is [electrical work](entity_task)?
+      - How risky is [electrical work](entity_task)?
+      - What are the risks of an [arc flash](entity_hazard)?
+      - Can [electrical job](entity_task) cause injury?
+      - What hazards are associated with high [amperage work](entity_current)?
+      - What hazards are associated with high [power work](entity_current)?
+      - What types of hazards exist in [electrical work](entity_task)?
+      - How can an [arc flash](entity_hazard) occur?
+      - What are the common [electrical hazards](entity_hazard) on a job site?
+      - What are the main dangers of working near [power lines](entity_equipment)?
+      - What injuries can occur from an [arc flash](entity_hazard)?
+      - Is [arc flash](entity_hazard) a common danger in [electrical work](entity_task)?
+      - How does an [arc flash](entity_hazard) happen?
+      - Can you explain what an [arc flash](entity_hazard) is?
+      - What causes [electrical hazards](entity_hazard)?
+      - Are [electrical hazards](entity_hazard) perilous for untrained workers?
+      - What can cause an [arc flash explosion](entity_hazard)?
+      - What is the danger of working with high [amperage electricity](entity_current)?
+      - How can [electrical shock](entity_hazard) occur?
+      - What are the dangers of [electrical burns](entity_injury)?
+      - Can [electrical job](entity_task) lead to [fires](entity_hazard)?
+      - Are there [fire hazards](entity_hazard) related to an [arc flash](entity_hazard)?
+      - What is an [arc blast](entity_hazard)?
+      - What injuries can an [arc blast](entity_hazard) cause?
+      - Can [electrical hazards](entity_hazard) be fatal?
+      - What are the most common causes of [electrical hazards](entity_hazard)?
+      - How do [arc flashes](entity_hazard) affect [electrical equipment](entity_equipment)?
+      - What kind of [safety equipment](entity_equipment) protects against [arc flash hazards](entity_hazard)?
+      - What are the most common [arc flash](entity_hazard) injuries?
+      - How do you prevent [arc flash hazards](entity_hazard)?
+      - Can [electrical hazards](entity_hazard) affect the environment?
+      - How do workers avoid [electrical hazards](entity_hazard)?
+      - How can [electrical devices](entity_equipment) be hazardous?
+      - Are wet conditions hazardous when working with [electricity](entity_task)?
+      - How can [arc flash](entity_hazard) injuries be treated?
+      - What current is most associated with [arc flash hazards](entity_hazard)?
+      - How do [arc flashes](entity_hazard) differ from [electrical shocks](entity_hazard)?
+      - What happens if you don't follow safety procedures in [electrical work](entity_task)?
+      - How hazardous is live [electrical work](entity_task)?
+      - What are the potential long-term effects of [electrical injuries](entity_injury)?
+      - What training is required to understand [electrical hazards](entity_hazard)?
+      - Can poorly maintained [equipment](entity_equipment) cause [electrical hazards](entity_hazard)?
+      - How does grounding help prevent [electrical hazards](entity_hazard)?
+      - What is the likelihood of an [arc flash](entity_hazard) in residential [electrical work](entity_task)?
+      - How hazardous is [electrical wiring](entity_equipment) in old buildings?
+      - What makes high [current systems](entity_current) more hazardous than low-voltage?
+      - What are the symptoms of [arc flash exposure](entity_hazard)?
+      - What types of [electrical systems](entity_equipment) are most prone to hazards?
+      - How can workers detect [electrical hazards](entity_hazard) in the field?
+      - How do [electrical currents](entity_current) contribute to workplace hazards?
 
   - intent: ask_ppe
     examples: |
-      - What PPE is needed for working with 600V?
-      - Do I need gloves for electrical work?
-      - What type of PPE should I wear for high-voltage work?
-      - Should I wear eye protection when working with electricity?
-      - How do I choose the right PPE for electrical work?
-      - What kind of helmet is required for electrical workers?
-      - Do I need insulated tools when working with electricity?
-      - What kind of gloves should be used for electrical tasks?
-      - Is face protection required for electrical work?
-      - Can regular gloves be used for electrical work?
-      - What type of clothing is considered PPE for electrical work?
-      - Do I need arc-rated PPE for all electrical tasks?
-      - What is arc-rated PPE?
-      - How does arc-rated PPE protect workers?
-      - What is the best PPE for arc flash protection?
-      - How much PPE is required for electrical maintenance?
-      - Are there different PPE requirements for low-voltage work?
-      - Can PPE protect me from electrical shocks?
-      - What PPE is recommended for working near high-voltage lines?
-      - What PPE is needed for live electrical work?
-      - How do I know if my PPE is rated for electrical work?
-      - Is PPE mandatory when working with electricity?
-      - Can PPE prevent all electrical injuries?
-      - What PPE should be worn in an electrical substation?
-      - How do you maintain PPE for electrical work?
-      - Can I use regular safety boots for electrical work?
-      - Do electricians need to wear flame-resistant clothing?
-      - What PPE is required for working with energized circuits?
-      - Can I reuse my PPE after an arc flash incident?
-      - What PPE standards should be followed for electrical work?
-      - Should I wear a full-body suit for high-voltage electrical tasks?
-      - Do I need ear protection for electrical work?
-      - Is head protection required for all electrical tasks?
-      - What type of boots should I wear for electrical tasks?
-      - How often should I inspect my electrical PPE?
-      - What PPE do I need for electrical panel work?
-      - Is there specific PPE for arc flash hazards?
-      - How do I know if my PPE is safe for electrical tasks?
-      - Can PPE reduce the risk of electrical burns?
-      - Do electricians need respiratory protection?
-      - What PPE is recommended for circuit breaker maintenance?
-      - Are safety glasses enough for electrical work?
-      - What does PPE stand for in electrical safety?
-      - How effective is PPE in preventing electrical injuries?
-      - Can I use cotton clothing for electrical tasks?
-      - What protective clothing is recommended for electrical engineers?
-      - What type of PPE should be worn for high-voltage cable work?
-      - Should I wear PPE when working near transformers?
-      - What are the most common PPE items for electricians?
-      - How does PPE help prevent arc flash injuries?
+      - What [personal protective equipment](entity_ppe) is needed for working with [600V](entity_voltage)?
+      - What [safety gear](entity_ppe) is needed for working with [600V](entity_voltage)?
+      - What [safety equipment](entity_ppe) is needed for working with [600V](entity_voltage)?
+      - What [protective gear](entity_ppe) is needed for working with [600V](entity_voltage)?
+      - Do I need [safety gloves](entity_tools) for [electrical work](entity_task)?
+      - Do I need [shock-resistant gloves](entity_tools) for [electrical work](entity_task)?
+      - Do I need [insulating gloves](entity_tools) for [electrical work](entity_task)?
+      - Do I need [hand protection](entity_tools) for [electrical work](entity_task)?
+      - What type of [protective gear](entity_ppe) should I wear for high [power](entity_current) work?
+      - What type of [safety equipment](entity_ppe) should I wear for high [amperage](entity_current) work?
+      - Should I wear [eye protection](entity_ppe) when working with [electricity](entity_task)?
+      - How do I choose the right [protective gear](entity_ppe) for [electrical work](entity_task)?
+      - What kind of [helmet](entity_tools) is required for [electrical workers](entity_task)?
+      - Do I need [shielded tools](entity_tools) when working with [electricity](entity_task)?
+      - What kind of [safety gloves](entity_tools) should be used for [electrical tasks](entity_task)?
+      - Is [face protection](entity_ppe) required for [electrical work](entity_task)?
+      - Can regular [insulating gloves](entity_tools) be used for [electrical work](entity_task)?
+      - What type of [clothing](entity_ppe) is considered [personal protective equipment](entity_ppe) for [electrical work](entity_task)?
+      - Do I need [arc-rated safety gear](entity_ppe) for all [electrical tasks](entity_task)?
+      - What is [arc-rated PPE](entity_ppe)?
+      - How does [arc-rated safety equipment](entity_ppe) protect workers?
+      - What is the best [personal protective equipment](entity_ppe) for [arc flash](entity_hazard) protection?
+      - How much [safety equipment](entity_ppe) is required for [electrical maintenance](entity_task)?
+      - Are there different [safety gear](entity_ppe) requirements for [low-voltage](entity_voltage) work?
+      - Can [safety equipment](entity_ppe) protect me from [electrical shocks](entity_hazard)?
+      - What [protective gear](entity_ppe) is recommended for working near high [amperage lines](entity_task)?
+      - What [safety equipment](entity_ppe) is needed for live [electrical work](entity_task)?
+      - How do I know if my [safety equipment](entity_ppe) is rated for [electrical work](entity_task)?
+      - Is [personal protective equipment](entity_ppe) mandatory when working with [electricity](entity_task)?
+      - Can [personal protective equipment](entity_ppe) prevent all [electrical injuries](entity_hazard)?
+      - What [safety gear](entity_ppe) should be worn in an [electrical substation](entity_task)?
+      - How do you maintain [protective gear](entity_ppe) for [electrical work](entity_task)?
+      - Can I use regular [safety boots](entity_tools) for [electrical work](entity_task)?
+      - Do [electricians](entity_job_title) need to wear [flame-resistant clothing](entity_ppe)?
+      - What [safety equipment](entity_ppe) is required for working with [energized circuits](entity_task)?
+      - Can I reuse my [safety gear](entity_ppe) after an [arc flash](entity_hazard) incident?
+      - What [personal protective equipment](entity_ppe) standards should be followed for [electrical work](entity_task)?
+      - Should I wear a full-body suit for high [wattage electrical tasks](entity_task)?
+      - Do I need [ear protection](entity_ppe) for [electrical work](entity_task)?
+      - Is [head protection](entity_ppe) required for all [electrical tasks](entity_task)?
+      - What type of [boots](entity_tools) should I wear for [electrical tasks](entity_task)?
+      - How often should I inspect my [electrical PPE](entity_ppe)?
+      - What [protective gear](entity_ppe) do I need for [electrical panel work](entity_task)?
+      - Is there specific [personal protective equipment](entity_ppe) for [arc flash hazards](entity_hazard)?
+      - How do I know if my [personal protective equipment](entity_ppe) is safe for [electrical tasks](entity_task)?
+      - Can [protective gear](entity_ppe) reduce the risk of [electrical burns](entity_hazard)?
+      - Do [electricians](entity_job_title) need [respiratory protection](entity_ppe)?
+      - What [personal protective equipment](entity_ppe) is recommended for [circuit breaker maintenance](entity_task)?
+      - Are [safety glasses](entity_tools) enough for [electrical work](entity_task)?
+      - How effective is [protective gear](entity_ppe) in preventing [electrical injuries](entity_hazard)?
+      - Can I use [cotton clothing](entity_tools) for [electrical tasks](entity_task)?
+      - What [protective clothing](entity_ppe) is recommended for [electrical engineers](entity_job_title)?
+      - Should I wear [personal protective equipment](entity_ppe) when working near [transformers](entity_task)?
+      - What are the most common [personal protective equipment](entity_ppe) items for [electricians](entity_job_title)?
+      - How does [personal protective equipment](entity_ppe) help prevent [arc flash injuries](entity_hazard)?
+
+    
 
   - intent: ask_voltage
     examples: |
-      - What is the safe voltage limit for working?
-      - How much voltage is dangerous without protection?
-      - What voltage requires special PPE?
-      - What is the maximum safe voltage for electricians?
-      - What voltage is considered high-voltage?
-      - Is there a safe voltage for electrical work?
-      - Can I work on 120V circuits without protection?
-      - How much voltage is dangerous in water?
-      - Is 600V more dangerous than 480V?
-      - What voltage is considered low-voltage in electrical work?
-      - Is low-voltage safer than high-voltage?
-      - What voltage level is common in residential wiring?
-      - How does voltage affect the risk of electric shock?
-      - What voltage requires insulated tools?
-      - How much voltage can the human body handle safely?
-      - At what voltage does arc flash become a risk?
-      - What is the difference between high and low-voltage safety?
-      - Do I need PPE for 120V electrical work?
-      - Can voltage affect the severity of electrical burns?
-      - What voltage requires a full PPE kit?
-      - How does voltage affect electrical equipment ratings?
-      - Is 240V safe to work on without gloves?
-      - At what voltage do you need to de-energize equipment?
-      - What is the minimum voltage considered hazardous?
-      - What voltage poses the highest risk for arc flash?
-      - What voltage level requires an arc flash suit?
-      - How does voltage contribute to electrical fires?
-      - What voltage is used in commercial electrical systems?
-      - What voltage is found in industrial settings?
-      - Is it safe to work on 480V systems with minimal PPE?
-      - What is the voltage limit for residential electricians?
-      - How can I measure the voltage in a live circuit?
-      - What voltage rating is needed for electrical gloves?
-      - Is it safe to touch 12V wires without PPE?
-      - What is the voltage rating of a typical circuit breaker?
-      - How can you reduce the voltage hazard in electrical work?
-      - What voltage should electricians be trained to handle?
-      - How dangerous is 1000V compared to lower voltages?
-      - What voltage is typical in high-voltage electrical systems?
-      - Does voltage affect the need for grounding?
-      - How does voltage influence the choice of PPE?
-      - What is the voltage rating for arc flash protection?
-      - How much voltage is in standard household outlets?
-      - What voltage requires a safety permit for work?
-      - How can I check if a circuit is live and its voltage level?
-      - Is 600V considered high-voltage in electrical terms?
-      - How does voltage increase the risk of electrocution?
-      - What voltage is used for high-tension power lines?
-      - Is there a limit to how much voltage can be worked on safely?
+      - What is the safe [amperage](entity_current) limit for [working](entity_task)?
+      - What is the safe electrical [voltage](entity_voltage) limit for [working](entity_task)?
+      - What is the safe electrical [voltage](entity_voltage) limit for [working](entity_task)?
+      - What is the safe electrical [voltage](entity_voltage) limit for [working](entity_task)?
+      - What is the safe [current](entity_current) limit for [working](entity_task)?
+      - How much [amperage](entity_current) is hazardous without protection?
+      - How much electrical [voltage](entity_voltage) is unsafe without protection?
+      - How much [amperage](entity_current) is unsafe without protection?
+      - How much [amperage](entity_current) is risky without protection?
+      - How much [current](entity_current) is unsafe without protection?
+      - What electrical [power](entity_power) requires special [PPE](entity_ppe)?
+      - What [current](entity_current) requires special [PPE](entity_ppe)?
+      - What [amperage](entity_current) requires special [PPE](entity_ppe)?
+      - What electrical [power](entity_power) requires special [PPE](entity_ppe)?
+      - What [current](entity_current) requires special [PPE](entity_ppe)?
+      - What is the maximum safe electrical [voltage](entity_voltage) for [electricians](entity_job_title)?
+      - What is the maximum safe [amperage](entity_current) for [electricians](entity_job_title)?
+      - What is the maximum safe electrical [voltage](entity_voltage) for [electricians](entity_job_title)?
+      - What is the maximum safe [amperage](entity_current) for [electricians](entity_job_title)?
+      - What is the maximum safe electrical [voltage](entity_voltage) for [electricians](entity_job_title)?
+      - What electrical [power](entity_power) is considered [high-voltage](entity_voltage)?
+      - What [amperage](entity_current) is considered [high-voltage](entity_voltage)?
+      - What [amperage](entity_current) is considered [high-voltage](entity_voltage)?
+      - What [current](entity_current) is considered [high-voltage](entity_voltage)?
+      - What electrical [voltage](entity_voltage) is considered [high-voltage](entity_voltage)?
+      - Is there a safe electrical [voltage](entity_voltage) for electrical work?
+      - Is there a safe electrical [voltage](entity_voltage) for electrical work?
+      - Is there a safe [current](entity_current) for electrical work?
+      - Is there a safe electrical [voltage](entity_voltage) for electrical work?
+      - Is there a safe electrical [power](entity_power) for electrical work?
+      - Can I [operation](entity_task) on [120V](entity_voltage) circuits without protection?
+      - Can I [operation](entity_task) on [120V](entity_voltage) circuits without protection?
+      - Can I [job](entity_task) on [120V](entity_voltage) circuits without protection?
+      - Can I [job](entity_task) on [120V](entity_voltage) circuits without protection?
+      - Can I [activity](entity_task) on [120V](entity_voltage) circuits without protection?
+      - How much [amperage](entity_current) is perilous in water?
+      - How much electrical [voltage](entity_voltage) is risky in water?
+      - How much [current](entity_current) is perilous in water?
+      - How much electrical [voltage](entity_voltage) is risky in water?
+      - How much [amperage](entity_current) is perilous in water?
+      - Is [600V](entity_voltage) more hazardous than [480V](entity_voltage)?
+      - Is [600V](entity_voltage) more hazardous than [480V](entity_voltage)?
+      - Is [600V](entity_voltage) more perilous than [480V](entity_voltage)?
+      - Is [600V](entity_voltage) more hazardous than [480V](entity_voltage)?
+      - Is [600V](entity_voltage) more unsafe than [480V](entity_voltage)?
+      - What [amperage](entity_current) is considered low-voltage in electrical work?
+      - What [amperage](entity_current) is considered low-voltage in electrical work?
+      - What [current](entity_current) is considered low-voltage in electrical work?
+      - What [current](entity_current) is considered low-voltage in electrical work?
+      - What electrical [voltage](entity_voltage) is considered low-voltage in electrical work?
+      - Is [low-voltage](entity_voltage) safer than [high-voltage](entity_voltage)?
+      - Is [low-voltage](entity_voltage) safer than [high-voltage](entity_voltage)?
+      - Is [low-voltage](entity_voltage) safer than [high-voltage](entity_voltage)?
+      - Is [low-voltage](entity_voltage) safer than [high-voltage](entity_voltage)?
+      - Is [low-voltage](entity_voltage) safer than [high-voltage](entity_voltage)?
+      - What [amperage](entity_current) level is common in [residential wiring](entity_task)?
+      - What [amperage](entity_current) level is common in [residential wiring](entity_task)?
+      - What electrical [voltage](entity_voltage) level is common in [residential wiring](entity_task)?
+      - What [current](entity_current) level is common in [residential wiring](entity_task)?
+      - What electrical [voltage](entity_voltage) level is common in [residential wiring](entity_task)?
+      - How does [amperage](entity_current) affect the risk of electric shock?
+      - How does [current](entity_current) affect the risk of electric shock?
+      - How does electrical [power](entity_power) affect the risk of electric shock?
+      - How does [current](entity_current) affect the risk of electric shock?
+      - How does electrical [power](entity_power) affect the risk of electric shock?
+      - What [amperage](entity_current) requires shock-resistant tools?
+      - What electrical [power](entity_power) requires protected tools?
+      - What [current](entity_current) requires protected tools?
+      - What electrical [power](entity_power) requires protected tools?
+      - What electrical [voltage](entity_voltage) requires protected tools?
+
 
   - intent: ask_question
     examples: |
@@ -977,3 +1008,97 @@ nlu:
       - what is the smallest planet in the solar system?
       - who was the first president of the United States?
       - what is the national flower of Japan?
+
+# Entity Synonym Mappings
+entity_synonyms:
+    # Arc flash synonyms
+    arc flash:
+      - electrical arc
+      - arc blast
+      - flashover
+      - arc fault
+      - electrical explosion
+      - voltage arc
+      - arc discharge
+      - electric arc flash
+
+    # Current/Amperage synonyms
+    amperage:
+      - amps
+      - electric current
+      - current flow
+      - electrical current
+      - electrical amperage
+      - flow of electricity
+      - current
+
+    # Voltage synonyms
+    voltage:
+      - volts
+      - electrical voltage
+      - potential difference
+      - power level
+      - voltage rating
+      - electrical tension
+      - voltage level
+      - electric potential
+      - voltage output
+
+    # PPE synonyms
+    personal protective equipment:
+      - safety gear
+      - protective equipment
+      - protective wear
+      - safety apparel
+      - safety equipment
+      - personal gear
+      - protective kit
+      - safety kit
+      - PPE
+      - protection equipment
+
+    # Electrical work synonyms
+    electrical work:
+      - electrical task
+      - electrical operation
+      - electrical job
+      - electrical activity
+      - electrical maintenance
+      - wiring work
+      - electrical repair
+      - electrical projects
+
+    # Equipment synonyms
+    electrical equipment:
+      - electrical devices
+      - apparatus
+      - electrical machinery
+      - electrical gear
+      - electrical tools
+      - equipment
+      - electrical hardware
+      - instrumentation
+      - electrical systems
+      - electrical components
+
+    # Hazard synonyms
+    electrical hazard:
+      - electrical risk
+      - electric danger
+      - electrical peril
+      - electrical threat
+      - electrical issue
+      - electric hazard
+      - electrical problem
+      - potential hazard
+
+    # Burns/Injury synonyms
+    electrical injuries:
+      - burns
+      - injuries
+      - electrical trauma
+      - electrical harm
+      - electrical wounds
+      - electrical shocks
+      - electric injury
+      - electric wounds
