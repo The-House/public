@@ -17,7 +17,6 @@ intents:
 actions:
   - action_default_fallback
   - action_default_ask_affirmation
-  - action_listen
   - utter_affirm
   - utter_deny
   - utter_greet
@@ -30,6 +29,9 @@ entities:
   - voltage
   - hazard
   - equipment
+  - entity_ppe
+  - entity_voltage
+  - entity_hazard
 
 slots:
   voltage:
